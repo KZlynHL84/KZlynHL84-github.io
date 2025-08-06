@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Hobbies | Keze</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      background: url('cloudy pink.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: radial-gradient(#fff8, transparent 70%);
+      animation: sparkle 8s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes sparkle {
+      0% {background-position: 0 0;}
+      100% {background-position: 1000px 1000px;}
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border-radius: 25px;
+      padding: 40px 30px;
+      max-width: 850px;
+      margin: 60px auto;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.3rem;
+      color: #333;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px #ffd1dc;
+    }
+
+    .hobby {
+      background-color: #fff0f5;
+      border-left: 6px solid #ffb6c1;
+      padding: 15px 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, background 0.3s ease;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    .hobby:hover {
+      transform: translateY(-5px);
+      background-color: #ffe4ec;
+    }
+
+    .hobby span {
+      font-size: 1.8rem;
+      animation: floatIcon 2.5s ease-in-out infinite;
+    }
+
+    @keyframes floatIcon {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .hobby p {
+      font-size: 1.1rem;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .back-btn {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      text-decoration: none;
+      background-color: #ffb6c1;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-btn:hover {
+      background-color: #ff9ab3;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hobby {
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .hobby p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>💫 Things I Love</h1>
+
+    <div class="hobby">
+      <span>🎬</span>
+      <p><strong>Marvel Movies</strong> (especially <em>The Avengers</em>) — My favorite superheroes are Iron Man and Black Widow.</p>
+    </div>
+
+    <div class="hobby">
+      <span>📺</span>
+      <p><strong>K-Dramas</strong> — I've watched at least a hundred! My top picks: <em>Twenty-Five Twenty-One</em>, <em>Hi Bye, Mama!</em>, <em>Welcome to Waikiki</em>, and <em>A Korean Odyssey (Hwayugi)</em>. You should totally watch them!</p>
+    </div>
+
+    <div class="hobby">
+      <span>🏍️</span>
+      <p><strong>Motorcycling</strong> — I go for rides whenever I have free time. Nothing beats the breeze and open road.</p>
+    </div>
+
+    <div class="hobby">
+      <span>📖</span>
+      <p><strong>Reading on NovelApp</strong> — A cozy way to escape into different worlds and live a thousand stories.</p>
+    </div>
+
+    <div class="hobby">
+      <span>🎨</span>
+      <p><strong>Exploring New Creative Skills</strong> — I love discovering new ways to create and grow, whether it’s crafting, coding, or trying something totally new.</p>
+    </div>
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>

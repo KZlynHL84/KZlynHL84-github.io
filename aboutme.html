@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Keze</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      background: url('cloudy pink.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      border-radius: 25px;
+      padding: 40px;
+      max-width: 800px;
+      width: 90%;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 0 10px #ffb6c1;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      text-decoration: none;
+      background-color: #ffb6c1;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-btn:hover {
+      background-color: #ff9ab3;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="pretty.jpeg" alt="Kezelyn's Photo" />
+    <h1>Hi! I'm Kezelyn Lisnang — but you can call me Keze ✨</h1>
+    <p>Welcome to my little corner of the internet — I'm so happy you're here!</p>
+    <p>I'm a creative soul with a love for cozy aesthetics, meaningful connections, and the little things that spark joy.</p>
+    <p>Whether it's through writing or simply expressing myself online, I enjoy turning ordinary moments into something a bit more magical.</p>
+    <p>I'm a student, a dreamer, and someone who believes that kindness and curiosity can go a long way.</p>
+    <p>This website is a reflection of who I am — simple, genuine, and sprinkled with a touch of sparkle.</p>
+    <p>I hope it makes you feel right at home.</p>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>
